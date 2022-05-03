@@ -8,7 +8,16 @@
 .App {
   text-align: center;
   height: 100vh;
-  background-image: linear-gradient(#ffd89b, #19547b);
+  /* background-image: linear-gradient(#ffd89b, #19547b); */
+  animation: changeBG 5s linear infinite;
+}
+
+@keyframes changeBG {
+  0% {background-color: #a2b9bc;}
+  25% {background-color: #b2ad7f;}
+  50% {background-color: #878f99;}
+  75% {background-color: #6b5b95;}
+  100% {background-color: #a2b9bc;}
 }
 
 .App-logo {
